@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>도서정보등록 폼</title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<style>			
+			#id, #pwd { width: 100px;}
+			table { margin:0 auto; width:600px; }
+			#checkMember {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+	        <h3 align="center">도서정보등록</h3>
+	        <hr>
+	        <form id="bookjoinForm" name="bookjoinForm" method="post" action="bookInsert2">
+	          <table>
+	            <tr><td>도서번호</td><td><input type="text" id="No" name="No"></td></tr>
+	            <tr><td>도서명</td><td><input type="text" id="Name" name="Name"></td></tr>
+	            <tr><td>저자</td><td><input type="text" id="Aut" name="Aut"></td></tr>
+	            <tr><td>가격</td><td><input type="text" id="Pri" name="Pri"></td></tr>
+	            <tr><td>발행일</td><td><input type="text" id="Date" name="Date"></td></tr>	 
+	            <tr><td>출판사번호</td><td><input type="text" id="Pno" name="Pno"></td></tr>
+	            
+	            <tr><td colspan="2"> <input type="submit" value="도서정보 입력"> <input type="reset" value="도서정보보기"></td></tr>
+	           
+	          </table>
+	          
+      		</form>	
+      	 </div>            
+    </body>
+</html>
